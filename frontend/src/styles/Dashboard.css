@@ -1,0 +1,239 @@
+/* src/styles/Dashboard.css */
+
+/* ========== General Container ========= */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+/* ========== Neomorphic Cards ========= */
+.neo-card {
+  background: #ebe7e7;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.neo-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ========== Welcome & Impact ========= */
+.welcome-card {
+  text-align: center;
+}
+
+.impact-points {
+  display: flex;
+  justify-content: space-around;
+  
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.impact-card {
+  flex: 1 1 200px;
+  margin: 10px;
+  text-align: center;
+   background-color: #9ed66c;
+  padding: 20px;
+}
+
+.impact-card h1 {
+  font-size: 4em;
+  margin: 10px 0;
+}
+
+/* ========== Profile Section ========= */
+.profile-section h3 {
+  margin-bottom: 15px;
+}
+
+.profile-field {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.profile-field span {
+  font-weight: 600;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.profile-field input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.profile-field input:focus {
+  box-shadow: inset 3px 3px 6px #78ac6c, inset -3px -3px 6px #ffffff;
+}
+
+/* ========== Address Section ========= */
+.address-list {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.address-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.address-card button {
+  background: #ff4d4d;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.address-card button:hover {
+  background: #ff1a1a;
+  transform: scale(1.05);
+}
+
+.address-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.address-inputs input {
+  flex: 1 1 250px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.address-inputs button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.address-inputs button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* ========== Map ========= */
+.map-container {
+  margin-top: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.map-container button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background: #2196f3;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.map-container button:hover {
+  background: #1976d2;
+  transform: scale(1.05);
+}
+
+/* ========== Orders Section ========= */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.order-card {
+  padding: 15px;
+  background-color: white;
+  
+}
+
+.order-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #a6e7a9;
+}
+
+.product-summary {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex: 1 1 200px;
+   background-color: #a6e7a9;
+  gap: 10px;
+}
+
+.product-summary img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ========== Logout Button ========= */
+.logout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background: #f44336;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* ========== Responsive ========= */
+@media screen and (max-width: 768px) {
+  .impact-points {
+    flex-direction: column;
+  }
+
+  .address-inputs {
+    flex-direction: column;
+  }
+
+  .order-products {
+    flex-direction: column;
+  }
+}

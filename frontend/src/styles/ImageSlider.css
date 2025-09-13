@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.slider-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 20px;
+  background: #f5f5f5;
+  box-shadow: 0 30px 50px #bdbdbd;
+  position: relative;
+}
+
+#slide {
+  width: max-content;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  height: 280px;
+}
+
+.item {
+  width: 400px;
+  height: 280px;
+  background-position: center;
+  background-size: 200%;
+  display: inline-block;
+  position: absolute;
+  transition: 1s;
+  z-index: 1;
+}
+
+.item:nth-child(1) {
+  transform: translate(-150%);
+  opacity: 0;
+}
+
+.item:nth-child(2) {
+  transform: translate(-40%);
+}
+
+.item:nth-child(3) {
+  transform: translate(70%);
+}
+
+.item:nth-child(4),
+.item:nth-child(n+5) {
+  transform: translate(290%);
+  opacity: 0;
+}
+
+.item .content {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  width: 80%;
+  padding: 10px 10%;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  box-shadow: 0 30px 50px #b9b9b9;
+  transition: 0.5s;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.item .content .name {
+  font-family: 'Anton', sans-serif;
+}
+
+.item:hover .content {
+  max-height: 100px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #555;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+
+.buttons button:hover {
+  background-color: #bac383;
+}

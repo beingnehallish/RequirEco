@@ -1,0 +1,22 @@
+/* src/styles/Home.css */
+.home-container {
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.product-grid a{
+text-decoration: none;
+  color: inherit;
+}
+ 
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+}

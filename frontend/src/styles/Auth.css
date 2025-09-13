@@ -1,0 +1,129 @@
+
+.auth-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.auth-form h2 {
+  margin-bottom: 1rem;
+  color: var(--green);
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.auth-form button {
+  width: 100%;
+  margin-top: 1rem;
+}/* Container styling */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #eafdf2, #9fe7a1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Heading */
+.login-form h2 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Form inputs */
+.login-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border 0.3s ease;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  border-color: #080e15;
+  outline-width: 10px;
+}
+
+/* Submit button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6ecc62;
+  
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #4a8c3e;
+}
+
+/* Error message */
+.error {
+  color: #e63946;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* Redirect link */
+.signup-redirect {
+  margin-top: 1.8rem;
+  font-size: 0.95rem;
+  color: #555;
+  
+
+}
+
+.signup-link {
+  color: #42a524;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: #616461;
+}
+.vendor-prompt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.vendor-prompt:hover {
+  background-color: #1b5e20;
+}
